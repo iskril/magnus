@@ -6,7 +6,8 @@
 }
 
 ul,
-ol {
+ol,
+a {
   padding: 0;
 }
 
@@ -16,6 +17,7 @@ li {
 }
 
 body,
+a,
 h1,
 h2,
 h3,
@@ -35,8 +37,162 @@ dd {
 a {
   text-decoration: none;
 }
-
+@font-face {
+    font-family: "GothamPro";
+    src: url(fonts/GothamPro.ttf);
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "GothamPro";
+    font-size: 1.4rem;
+    background-color: #1E3747;
+}
 .container {
-  max-width: 1300px;
-  margin: 0 auto;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.header {
+    padding: 1.1rem 0;
+
+    background-color: #1E3747;
+    color: #fff;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.header-left {
+    display: flex;
+    justify-content: space-between;
+}
+.header-right {
+    display: flex;
+}
+.header_title {
+    position: relative;
+    margin: 0 1.9rem;
+    font-size: 1rem;
+    opacity: 60%;
+    cursor: default;
+    font-weight: normal;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: -2.7rem;
+        width: 0.1rem;
+        height: 2.6rem;
+        background-color: #fff;
+        opacity: 60%;
+    }
+}
+.header__svg-tel {
+    margin-right: -1rem;
+    margin-left: 4.6rem;
+}
+.header__tel {
+    position: relative;
+    margin: 0.4rem 1.9rem 0;
+    font-size: 1.6rem;
+    color: #fff;
+    
+    &:last-child::before {
+        position: absolute;
+        content: '';
+        width: 0.1rem;
+        height: 1.5rem;
+        transform: rotate(30deg);
+        left: -1.8rem;
+        top: 0.2rem;
+        background-color: #fff;
+        opacity: 60%;
+    }
+}
+.header__personal-area {
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-size: 1.4rem;
+
+    color: #fff;
+    border-bottom: 0.1rem dashed rgba(255, 255, 255, 0.2);
+}
+.header__language {
+    position: relative;
+    display: inline-block;
+    margin-left: 4rem;
+    margin-top: 0.5rem;
+    color: #fff;
+    opacity: 60%;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0.5rem;
+        right: -0.6rem;
+        width: 0.2rem;
+        height: 0.6rem;
+        transform: rotate(-45deg);
+
+        background-color: #fff;
+        
+    }
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0.5rem;
+        right: -0.9rem;
+        width: 0.2rem;
+        height: 0.6rem;
+        transform: rotate(45deg);
+
+        background-color: #fff;
+        
+    }
+}
+.--bgwhite {
+    background-color: #fff;
+}
+.nav__link {
+    position: relative;
+    font-size: 1.4rem;
+    color: #1E3747;
+    background-color: #fff;
+
+    &::before {
+        border: medium solid transparent;
+        content: "";
+        
+        right: -2rem;
+        top: 0.7rem;
+        position: absolute;
+        height: 0;
+        width: 0;
+        border-color: #516C85 rgba(255, 212, 52, 0) rgba(255, 212, 52, 0);
+        opacity: 30%;
+        border-width: 0.5rem;
+        margin-left: -2.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+.dvd {
+    position: absolute;
+    right: 30rem;
+    top: 30rem;
+
+    width: 60rem;
+    height: 50rem;
+
+    transform: rotate(20deg);
+
+    background-color: chartreuse;
 }
