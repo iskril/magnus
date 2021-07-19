@@ -40,7 +40,7 @@ a {
 
 @font-face {
   font-family: "GothamPro";
-  src: url(fonts/GothamPro.ttf);
+  src: url("fonts/GothamPro.ttf");
 }
 
 html {
@@ -145,6 +145,7 @@ body {
   position: relative;
   display: inline-block;
   margin-left: 4rem;
+  margin-right: 1rem;
   margin-top: 0.5rem;
   color: #fff;
   opacity: 60%;
@@ -176,6 +177,28 @@ body {
 
 .--bgwhite {
   background-color: #fff;
+  padding: 0;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -5.5rem;
+}
+
+.nav__item {
+  margin: 0 5.5rem;
+  margin-top: 4rem;
 }
 
 .nav__link {
@@ -199,14 +222,216 @@ body {
   margin-left: -2.5rem;
 }
 
-.dvd {
+.nav__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__basket {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 4.2rem;
+  max-width: 14.6rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2.6rem 0;
+  padding-left: 2.2rem;
+  color: #fff;
+  background-color: #FF9027;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.nav__basket:hover {
+  background-color: #fa8212;
+}
+
+.nav__svg-basket {
+  margin-right: 2rem;
+  margin-top: -0.3rem;
+}
+
+.nav__basket-circle {
   position: absolute;
-  right: 30rem;
-  top: 30rem;
-  width: 60rem;
-  height: 50rem;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
-  background-color: chartreuse;
+  top: 4.1rem;
+  left: 3.3rem;
+  display: inline-block;
+  background: #fff;
+  color: #FF9027;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0.3rem  0;
+  width: 2rem;
+  height: 2rem;
+}
+
+.nav__basket-item {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.nav__sum {
+  margin-left: 4.3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nav__sum > img {
+  height: 1rem;
+  margin-left: 0.4rem;
+}
+
+.intro {
+  max-height: 48rem;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  background-size: 100%;
+  background-image: url(img/main-bg.jpg);
+}
+
+.intro__logo {
+  margin-top: 11.6rem;
+  height: 3.3rem;
+}
+
+.intro__title {
+  margin-top: 1.5rem;
+  font-size: 2.4rem;
+  color: #fff;
+  line-height: 3rem;
+}
+
+.intro__text {
+  margin: 2rem 0 5rem;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 400;
+  line-height: 2.7rem;
+}
+
+.intro__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro__link {
+  padding: 2rem 3rem;
+  background-color: #FF9027;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.intro__link:hover {
+  background-color: #fa8212;
+}
+
+.intro__arrow {
+  padding: 2rem;
+  background: #fff;
+  background-color: #db822e;
+}
+
+.intro__bg-layer {
+  z-index: 4;
+  position: relative;
+  overflow: hidden;
+  right: -60rem;
+  top: -60rem;
+  width: 65rem;
+  height: 90rem;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  background-color: #F8F9FD;
+}
+
+.intro__bg-pattern {
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  top: 20rem;
+  right: 15rem;
+  background-image: url(img/pattern.svg);
+  width: 100rem;
+  height: 60rem;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  background-color: #234051;
+  opacity: 6%;
+}
+
+.intro__compressor {
+  position: relative;
+  z-index: 6;
+  top: -30rem;
+  right: -5rem;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+.--small {
+  position: relative;
+  max-width: 27.7rem;
+  max-height: 28.8rem;
+  z-index: 6;
+  top: -83rem;
+  left: 34rem;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+.--small > img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.advantages__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages__item {
+  position: relative;
+  text-align: center;
+  padding: 5.5rem 4.5rem;
+}
+
+.advantages__item::after {
+  position: absolute;
+  right: 0rem;
+  top: 5.5rem;
+  content: '';
+  width: 0.1rem;
+  height: 15rem;
+  background-color: #516C85;
+  opacity: 15%;
+}
+
+.advantages__item:last-child::after {
+  display: none;
+}
+
+.advantages__speed-arrow {
+  position: relative;
+  right: 2.6rem;
+  top: 0.4rem;
+}
+
+.advantages__title {
+  margin-top: 3.7rem;
+  font-size: 1.6rem;
+}
+
+.advantages__text {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
