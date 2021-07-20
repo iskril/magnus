@@ -437,6 +437,10 @@ body {
   color: #4A6278;
 }
 
+.productions__list {
+  margin-right: 8.4rem;
+}
+
 .productions__item {
   padding: 2rem 0 2rem;
   font-size: 1.6rem;
@@ -452,6 +456,7 @@ body {
 
 .--active {
   position: relative;
+  margin-left: 3rem;
   font-style: 2.4rem;
   line-height: 3.2rem;
   opacity: 1;
@@ -465,5 +470,68 @@ body {
   background-color: #FF9027;
   left: -3rem;
   top: 3.3rem;
+}
+
+.productions__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.productions__product {
+  margin: 1rem;
+  background-color: #F8f9fd;
+}
+
+.productions__product-img-box {
+  margin-top: 4.5rem;
+  max-width: 27rem;
+  max-height: 27rem;
+}
+
+.productions__product-img {
+  width: 100%;
+  height: 27rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.productions__product-grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 31rem 31rem 31rem;
+      grid-template-columns: 31rem 31rem 31rem;
+  -ms-grid-rows: 42rem;
+      grid-template-rows: 42rem;
+}
+
+.productions__product-link {
+  display: block;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #1e3747;
+}
+
+.productions__button {
+  display: block;
+  margin-left: 51%;
+  padding: 6rem 0;
+}
+
+.productions__button-link {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 6.4rem;
+  border: 0.1rem solid rgba(81, 108, 133, 0.2);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.productions__button-link:hover {
+  background-color: #F8f9fd;
 }
 /*# sourceMappingURL=style.css.map */
