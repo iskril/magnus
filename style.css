@@ -427,11 +427,43 @@ body {
 .advantages__title {
   margin-top: 3.7rem;
   font-size: 1.6rem;
+  color: #4A6278;
 }
 
 .advantages__text {
   font-size: 1.4rem;
   line-height: 2.4rem;
   margin-top: 1rem;
+  color: #4A6278;
+}
+
+.productions__item {
+  padding: 2rem 0 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1E3747;
+  opacity: 20%;
+  text-transform: uppercase;
+}
+
+.productions__item:first-child {
+  padding-top: 4rem;
+}
+
+.--active {
+  position: relative;
+  font-style: 2.4rem;
+  line-height: 3.2rem;
+  opacity: 1;
+}
+
+.--active::before {
+  position: absolute;
+  content: '';
+  width: 0.4rem;
+  height: 5.2rem;
+  background-color: #FF9027;
+  left: -3rem;
+  top: 3.3rem;
 }
 /*# sourceMappingURL=style.css.map */
