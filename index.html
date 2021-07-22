@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <div class="container">
         <header class="header">
             <div class="wrapper">
@@ -21,6 +22,9 @@
                     <img class="header__svg-tel" src="img/tel.svg" alt="icon">
                     <a class="header__tel" href="tel:8-800-100-77-25">8-800-100-77-25</a>
                     <a class="header__tel" href="tel:8-88652-45-49-05">8-8652-45-49-05</a>
+                </div>
+                <div class="nav__burger">
+                    <span></span>
                 </div>
 
                 <div class="header-right">
@@ -38,7 +42,48 @@
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a class="nav__link" href="#">Бытовое оборудование</a>
+                        <ul class="nav__sub-list">
+                            <li class="nav__sub-li-1">
+                                <ul>
+                                    <li class="nav__sub-li">
+                                        <a class="nav__sub-link" href="#">Электрогенераторы</a>
+                                    </li>
+                                    <li class="nav__sub-li">
+                                        <a class="nav__sub-link" href="#">Дизельные электростанции</a>
+                                    </li>
+                                    <li class="nav__sub-li">
+                                        <a class="nav__sub-link" href="#">Мотопомпы бензиновые</a>
+                                    </li>
+                                    <li class="nav__sub-li">
+                                        <a class="nav__sub-link" href="#">Воздушные компрессоры</a>
+                                    </li>
+                                    <li class="nav__sub-li">
+                                        <a class="nav__sub-link" href="#">Cтабилизаторы напряжения</a>
+                                    </li>
+                                    <li class="nav__sub-li">
+                                        <a class="nav__sub-link" href="#">Насосное оборудование</a>
+                                    </li>
+                                    <li class="nav__sub-li">
+                                        <a class="nav__sub-link" href="#">Бетоносмесителия</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__sub-li-2">
+                                <ul>
+                                    <li class="nav__sub-li">
+                                        <a class="nav__sub-link" href="#">Бетоносмесителия</a>
+                                    </li>
+                                    <li class="nav__sub-li">
+                                        <a class="nav__sub-link" href="#">Тримеры</a>
+                                    </li>
+                                    <li class="nav__sub-li">
+                                        <a class="nav__sub-link" href="#">Мотобуры</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
+
                     <li class="nav__item">
                         <a class="nav__link" href="#">Подбор запчастей</a>
                     </li>
@@ -55,8 +100,8 @@
                     <a class="nav__basket" href="#">
                         <img class="nav__svg-basket" src="img/basket.svg" alt="корзина">
                         <span class="nav__basket-circle">19</span>
-                        <div class="nav__basket-item">Корзина:</div>
-                        <div class="nav__sum">2 400<img src="img/rub.svg" alt="rub"></div>
+                        <span class="nav__basket-item">Корзина:</span>
+                        <span class="nav__sum">2 400<img src="img/rub.svg" alt="rub"></span>
                     </a>
                 </div>
             </nav>
@@ -66,7 +111,9 @@
     <div class="intro">
         <div class="container">
 
-            <img class="intro__logo" src="img/MAGNUS.svg" alt="logo">
+            <div class="intro__img-box">
+                <img class="intro__logo" src="img/MAGNUS.svg" alt="logo">
+            </div>
             <h1 class="intro__title">Компрессорное оборудование</h1>
             <p class="intro__text">Производство, поставка и сервисное<br> обслуживание компрессорного оборудования
             </p>
@@ -83,41 +130,44 @@
         </div>
     </div>
 
-    <div class="advantages">
-        <div class="--bgwhite">
-            <div class="container">
-                <div class="advantages__wrapper">
-                    <div class="advantages__item">
-                        <img src="img/speed.svg" alt="icon">
-                        <img class="advantages__speed-arrow" src="img/speed-arrow.svg" alt="icon">
-                        <div class="advantages__title">Преимущество 1</div>
-                        <p class="advantages__text">утилизировано более 2000<br> транспортных средств</p>
-                    </div>
+    <div class="--bgwhite">
+        <div class="container">
+            <div class="advantages__wrapper">
+                <div class="advantages__compressor">
+                    <div class="intro__compressor --advantages"><img src="img/compressor.png" alt="img"></div>
+                    <div class="intro__compressor --small --advantages"><img src="img/compressor.png" alt="img"></div>
+                </div>
+                <div class="advantages__item">
+                    <img src="img/speed.svg" alt="icon">
+                    <img class="advantages__speed-arrow" src="img/speed-arrow.svg" alt="icon">
+                    <div class="advantages__title">Преимущество 1</div>
+                    <p class="advantages__text">утилизировано более 2000<br> транспортных средств</p>
+                </div>
 
-                    <div class="advantages__item">
-                        <img src="img/speed.svg" alt="icon">
-                        <img class="advantages__speed-arrow" src="img/speed-arrow.svg" alt="icon">
-                        <div class="advantages__title">Преимущество 1</div>
-                        <p class="advantages__text">утилизировано более 2000<br> транспортных средств</p>
-                    </div>
+                <div class="advantages__item">
+                    <img src="img/speed.svg" alt="icon">
+                    <img class="advantages__speed-arrow" src="img/speed-arrow.svg" alt="icon">
+                    <div class="advantages__title">Преимущество 1</div>
+                    <p class="advantages__text">утилизировано более 2000<br> транспортных средств</p>
+                </div>
 
-                    <div class="advantages__item">
-                        <img src="img/speed.svg" alt="icon">
-                        <img class="advantages__speed-arrow" src="img/speed-arrow.svg" alt="icon">
-                        <div class="advantages__title">Преимущество 1</div>
-                        <p class="advantages__text">утилизировано более 2000<br> транспортных средств</p>
-                    </div>
+                <div class="advantages__item">
+                    <img src="img/speed.svg" alt="icon">
+                    <img class="advantages__speed-arrow" src="img/speed-arrow.svg" alt="icon">
+                    <div class="advantages__title">Преимущество 1</div>
+                    <p class="advantages__text">утилизировано более 2000<br> транспортных средств</p>
+                </div>
 
-                    <div class="advantages__item">
-                        <img src="img/speed.svg" alt="icon">
-                        <img class="advantages__speed-arrow" src="img/speed-arrow.svg" alt="icon">
-                        <div class="advantages__title">Преимущество 1</div>
-                        <p class="advantages__text">утилизировано более 2000<br> транспортных средств</p>
-                    </div>
+                <div class="advantages__item">
+                    <img src="img/speed.svg" alt="icon">
+                    <img class="advantages__speed-arrow" src="img/speed-arrow.svg" alt="icon">
+                    <div class="advantages__title">Преимущество 1</div>
+                    <p class="advantages__text">утилизировано более 2000<br> транспортных средств</p>
                 </div>
             </div>
         </div>
     </div>
+
 
     <div class="productions">
         <div class="--bgwhite">
@@ -144,38 +194,38 @@
                     <div class="productions__product-grid-wrapper">
                         <div class="productions__product">
                             <div class="productions__product-img-box"><img class="productions__product-img"
-                                    src="img/productions/productions-image-1.png"></div>
+                                    src="img/productions/productions-image-1.png" alt="img"></div>
                             <a class="productions__product-link" href="#">Компрессоры</a>
                         </div>
 
                         <div class="productions__product">
                             <div class="productions__product-img-box"><img class="productions__product-img"
-                                    src="img/productions/productions-image-2.png"></div>
-                            <a class="productions__product-link" href="#">Компрессоры</a>
+                                    src="img/productions/productions-image-2.png" alt="img"></div>
+                            <a class="productions__product-link" href="#">Системы подготовки воздуха</a>
                         </div>
 
                         <div class="productions__product">
                             <div class="productions__product-img-box"><img class="productions__product-img"
-                                    src="img/productions/productions-image-3.png"></div>
-                            <a class="productions__product-link" href="#">Компрессоры</a>
+                                    src="img/productions/productions-image-3.png" alt="img"></div>
+                            <a class="productions__product-link" href="#">Дизельные электростанции</a>
                         </div>
 
                         <div class="productions__product">
                             <div class="productions__product-img-box"><img class="productions__product-img"
-                                    src="img/productions/productions-image-4.png"></div>
-                            <a class="productions__product-link" href="#">Компрессоры</a>
+                                    src="img/productions/productions-image-4.png" alt="img"></div>
+                            <a class="productions__product-link" href="#">Генераторы азота и азотные станции</a>
                         </div>
 
                         <div class="productions__product">
                             <div class="productions__product-img-box"><img class="productions__product-img"
-                                    src="img/productions/productions-image-5.png"></div>
-                            <a class="productions__product-link" href="#">Компрессоры</a>
+                                    src="img/productions/productions-image-5.png" alt="img"></div>
+                            <a class="productions__product-link" href="#">Холодильное оборудование</a>
                         </div>
 
                         <div class="productions__product">
                             <div class="productions__product-img-box"><img class="productions__product-img"
-                                    src="img/productions/productions-image-6.png"></div>
-                            <a class="productions__product-link" href="#">Компрессоры</a>
+                                    src="img/productions/productions-image-6.png" alt="img"></div>
+                            <a class="productions__product-link" href="#">Инженерные решения</a>
                         </div>
                     </div>
                 </div>
@@ -208,7 +258,8 @@
                                 <a class="footer__list-link" href="#">Воздушные компрессоры</a>
                             </li>
                             <li class="footer__list-item">
-                                <a class="footer__list-link" href="#">Автоматические<br> стабилизаторы напряжения</a>
+                                <a class="footer__list-link" href="#">Автоматические<br> стабилизаторы
+                                    напряжения</a>
                             </li>
                             <li class="footer__list-item">
                                 <a class="footer__list-link" href="#">Насосное оборужование</a>
@@ -341,7 +392,9 @@
                         <div class="footer__contact-link" href="#">c 9:00 до 20:00</div>
                     </div>
 
-                    <a class="footer__contacts-button" href="#">Заказать звонок</a>
+
+                    <button class="footer__contacts-button" href="#">Заказать звонок</a>
+                    </button>
 
                 </div>
             </div>
@@ -374,24 +427,18 @@
                     <div class="footer__info-user">
                         <p>Оставьте свои предложеня, пожелания или жалобы - Мы обязательно
                             их
-                            примем во внимание. Наша цель стать ближе к нашим клиентам, слушать и слышать, расти вместе
+                            примем во внимание. Наша цель стать ближе к нашим клиентам, слушать и слышать, расти
+                            вместе
                             с
                             вами!</p>
                         <div class="footer__info-flex">
                             <a class="footer__info-item" href="#">Пользовательское соглашение</a>
                             <a class="footer__info-item" href="#">Карта сайтa</a>
                         </div>
-
                     </div>
-
-
                 </div>
             </div>
-
-
-
         </div>
-
 
 
 
