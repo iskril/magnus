@@ -11,33 +11,35 @@
 
 <body>
 
-    <div class="container">
-        <header class="header">
-            <div class="wrapper">
-                <div class="header-left">
-                    <a class="header__logo" href="#"><img src="img/MAGNUS.svg" alt="logo"></a>
-                    <h1 class="header_title">Производство, поставка и сервисное<br> обслуживание компрессорного
-                        оборудования
-                    </h1>
-                    <img class="header__svg-tel" src="img/tel.svg" alt="icon">
-                    <a class="header__tel" href="tel:8-800-100-77-25">8-800-100-77-25</a>
-                    <a class="header__tel" href="tel:8-88652-45-49-05">8-8652-45-49-05</a>
-                </div>
-                <div class="nav__burger">
-                    <span></span>
-                </div>
+    <div class="--bgblue-header">
+        <div class="container">
+            <header class="header">
+                <div class="wrapper">
+                    <div class="header-left">
+                        <a class="header__logo" href="#"><img src="img/MAGNUS.svg" alt="logo"></a>
+                        <h1 class="header_title">Производство, поставка и сервисное<br> обслуживание компрессорного
+                            оборудования
+                        </h1>
+                        <img class="header__svg-tel" src="img/tel.svg" alt="icon">
+                        <a class="header__tel" href="tel:8-800-100-77-25">8-800-100-77-25</a>
+                        <a class="header__tel" href="tel:8-88652-45-49-05">8-8652-45-49-05</a>
+                    </div>
 
-                <div class="header-right">
-                    <a class="header__personal-area" href="#">Личный кабинет</a>
-                    <a class="header__language" href="#">RU</a>
+                    <div class="header-right">
+                        <a class="header__personal-area" href="#">Личный кабинет</a>
+                        <a class="header__language" href="#">RU</a>
+                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </div>
     </div>
 
 
-    <header class="header --bgwhite">
+    <header class="header --bgwhite-header">
         <div class="container">
+            <div class="nav__burger">
+                <span></span>
+            </div>
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -392,10 +394,9 @@
                         <div class="footer__contact-link" href="#">c 9:00 до 20:00</div>
                     </div>
 
-
-                    <button class="footer__contacts-button" href="#">Заказать звонок</a>
-                    </button>
-
+                    <div class="footer__button">
+                        <a href="#form" class="footer__contacts-button">Заказать звонок</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -439,10 +440,42 @@
                 </div>
             </div>
         </div>
-
-
-
     </footer>
+    <div id="form" class="form__wrapper">
+        <div class="form__body">
+            <a class="form__close" href="#"><img src="img/close.png"></a>
+            <form action="#" method="get" class="form">
+                <div class="form__pattern">
+                    <div class="form__title">Отправить заявку</div>
+                    <p class="form__text">Возникли вопросы? Оставьте свои контактные данные и наши менеджеры свяжутся с
+                        вами
+                        в
+                        ближайшее время</p>
+                </div>
+                <div class="form__input">
+                    <span class="form__name">Имя</span>
+                    <input class="form__input-style" type="text" name="username">
+                </div>
+                <div class="form__input">
+                    <span class="form__name-phone">Номер телефона</span>
+                    <input class="form__input-style" type="tel" name="phone">
+                </div>
+                <button class="footer__contacts-button">Заказать звонок</button>
+                <label>
+                    <input class="checkbox" type="checkbox">
+                    <span class="checkbox-css"></span>
+                </label>
+                <p class="form__sub-text">Нажимая кнопку «Заказать» я соглашаюсь с условиями Пользовательского
+                    соглашения и
+                    даю
+                    свое
+                    согласие на обработку моих персональных данных в соответствии с законом №152-ФЗ «О персональных
+                    данных»
+                    от
+                    27.07.2006</p>
+            </form>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>

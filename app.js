@@ -7,7 +7,11 @@ productionsItem.forEach(item =>{
 });
 const burger = document.querySelector('.nav__burger');
 const navigation = document.querySelector('.nav__list');
+
 burger.addEventListener('click', function(e) {
     burger.classList.toggle('_active');
 });
 
+const call = documetn.querySelector('footer__contacts-button')
+
+call.classList.add()
